@@ -1,2 +1,2 @@
-docker run  -v /var/run/docker.sock:/var/run/docker.sock -v "$PWD":"$PWD" --rm local /bin/che $PWD $1
-
+#!/bin/sh
+cd /che && mkdir /che/bin && cp -r /che/files-to-deliver/* /che/bin
